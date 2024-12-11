@@ -1,5 +1,14 @@
+
 #Scamcompany{
     color:gold;
     text-align: center;
     font-family: Arial;
 }
+body {
+    background-image: url('https://cdn.discordapp.com/attachments/1082639331442831391/1316498042957992006/image.png?ex=675b43d8&is=6759f258&hm=d4827a95a9ebce3aa4b1f0e526f82f15428fd300ebaef0f209c9c859e1a887c6&');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+
+}
+
