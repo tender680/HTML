@@ -1,3 +1,11 @@
+
+h1{
+    color:rgb(255, 255, 0);
+    text-align: center;
+    font-family: Arial;
+    background-image: url("https://cdn.discordapp.com/attachments/1082639331442831391/1316504121276370997/HD-wallpaper-gold-fever-shape-gold-diamond-texture.png?ex=675b4981&is=6759f801&hm=7f179e8635c2b05ace762fc4a7af0b43dd37b8424b6f917b420bded05684457b&");
+    border-radius: 20%;
+}   
 body {
     background-image: url('https://cdn.discordapp.com/attachments/1082639331442831391/1316498607376961696/image.png?ex=675b445f&is=6759f2df&hm=282362bb9a99aed90e0035aac4872f7190c7a7ec65da202e538520b709b6a06a&');
     background-size: cover; 
