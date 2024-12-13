@@ -1,19 +1,53 @@
-
-h1{
-    color:rgb(255, 255, 0);
-    text-align: center;
-    font-family: Arial;
-    background-image: url("https://cdn.discordapp.com/attachments/1082639331442831391/1316504121276370997/HD-wallpaper-gold-fever-shape-gold-diamond-texture.png?ex=675b4981&is=6759f801&hm=7f179e8635c2b05ace762fc4a7af0b43dd37b8424b6f917b420bded05684457b&");
-    border-radius: 20%;
-}   
 body {
-    background-image: url('https://cdn.discordapp.com/attachments/1082639331442831391/1316498607376961696/image.png?ex=675b445f&is=6759f2df&hm=282362bb9a99aed90e0035aac4872f7190c7a7ec65da202e538520b709b6a06a&');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-}
-#texteScam{
-    text-align: center;
-    font-family: Arial;
+    margin : 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
 }
 
+nav h1 {
+    background-color: rgba(117, 62, 0, 0.3);
+    color: white;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(153, 82, 0, 0.3);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    margin: 5px;
+    margin-top: 1px;
+    border-bottom: 4px solid transparent;
+    border-radius: 5px;
+    transform: translate(0px, 4px);
+}
+
+nav a:hover {
+    border-bottom: 4px solid rgb(255, 255, 255, 0.3);
+    transform: translate(0px, 0px);
+    background-color: rgb(255, 255, 255, 0.3);
+
+}
+
+@keyframes bg-anim {
+    0% {
+        background: linear-gradient(rgb(255, 208, 7), transparent) no-repeat top left / 100vw 100vh, url('img/brosse.png') repeat 0px 0px / 300px 200px;
+    }
+    100% {
+        background: linear-gradient(rgb(255, 208, 7), transparent) no-repeat top left / 100vw 100vh, url('img/brosse.png') repeat 300px 200px / 300px 200px;
+    }
+}
+
+body {
+    animation-name: bg-anim;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
