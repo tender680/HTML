@@ -72,17 +72,62 @@ body {
 
 #Product .image:hover{
     transform:scale(1.03);
-    opacity: 1;
+    transition: 300ms ease-in-out;
 }
 
 #Product h2{
     text-align: center;
-    transform: translateY(-100px);
     opacity: 0;
+    transition: 0.5s ease-out;
 }
 
 #Product:has(.image:hover) h2 {
-    transition:all 300ms;
-    transform: translateY(30px);
+    transition: translateY(100px);
     opacity: 1;
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.bottom{
+    display: block;
+    position: fixed;
+    bottom : 0; 
+    background-color: rgba(153, 82, 0, 0.3);
+    width: 100vw;
+}
+
+.bottom h1{
+background-color: rgba(117, 62, 0, 0.3);
+margin: 0px;
+padding: 5px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 12pt;
+}
+
+.bottom p{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 11pt;
+}
+
+.bottom .reseau{
+    margin: 10px;
+    width: 50px;
+    height: auto;
+    vertical-align: top;
+}
+
+.page-achat{
+    background-color: rgba(117, 62, 0, 0.144);
+}
+
+.page-achat .image{
+    float: left;
+    width: 50%;
+    height: auto;
+    border-radius: 25px;
+    border: 10px solid rgba(167, 155, 0, 0.5);
+}
+
+.page-achat p h1 h2{
+    float:right;
+    vertical-align:baseline;
 }
