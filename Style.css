@@ -72,5 +72,17 @@ body {
 
 #Product .image:hover{
     transform:scale(1.03);
+    opacity: 1;
 }
 
+#Product h2{
+    text-align: center;
+    transform: translateY(-100px);
+    opacity: 0;
+}
+
+#Product:has(.image:hover) h2 {
+    transition:all 300ms;
+    transform: translateY(30px);
+    opacity: 1;
+}
