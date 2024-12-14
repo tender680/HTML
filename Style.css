@@ -131,3 +131,8 @@ font-size: 11pt;
     float:right;
     vertical-align:baseline;
 }
+
+.page-achat h1{
+    background-color: rgba(117, 62, 0, 0.3);
+}
+
