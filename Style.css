@@ -38,10 +38,10 @@ nav a:hover {
 
 @keyframes bg-anim {
     0% {
-        background: linear-gradient(rgb(255, 208, 7), transparent) repeat left / 100vw 100vh, url('img/brosse.png') repeat 0px 0px / 300px 200px;
+        background: linear-gradient(rgb(255, 208, 7), transparent) no-repeat top left / 100vw 100vh, url('img/brosse.png') repeat 0px 0px / 300px 200px;
     }
     100% {
-        background: linear-gradient(rgb(255, 208, 7), transparent) repeat left / 100vw 100vh, url('img/brosse.png') repeat 300px 200px / 300px 200px;
+        background: linear-gradient(rgb(255, 208, 7), transparent) no-repeat top left / 100vw 100vh, url('img/brosse.png') repeat 300px 200px / 300px 200px;
     }
 }
 
