@@ -1,0 +1,176 @@
+body {
+    margin : 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24pt;
+}
+
+nav h1 {
+    background-color: rgba(117, 62, 0, 0.3);
+    color: white;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(153, 82, 0, 0.3);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    margin: 5px;
+    margin-top: 1px;
+    border-bottom: 4px solid transparent;
+    border-radius: 5px;
+    transform: translate(0px, 4px);
+}
+
+nav a:hover {
+    border-bottom: 4px solid rgb(255, 255, 255, 0.3);
+    transform: translate(0px, 0px);
+    background-color: rgb(255, 255, 255, 0.3);
+
+}
+
+@keyframes bg-anim {
+    0% {
+        background: linear-gradient(rgb(255, 208, 7), transparent) no-repeat top left / 100vw 100vh, url('img/brosse.png') repeat 0px 0px / 300px 200px;
+    }
+    100% {
+        background: linear-gradient(rgb(255, 208, 7), transparent) no-repeat top left / 100vw 100vh, url('img/brosse.png') repeat 300px 200px / 300px 200px;
+    }
+}
+
+body {
+    animation-name: bg-anim;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+#Product h1{
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32pt;
+    text-align: center;
+    background-color: black;
+}
+
+#Product .image {
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    border-radius: 25px;
+    border: 10px solid rgba(167, 155, 0, 0.5);
+}
+
+#Product .image:hover{
+    transform:scale(1.03);
+    transition: 300ms ease-in-out;
+}
+
+#Product h2{
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+
+#Product:has(.image:hover) h2 {
+    transition: translateY(100px);
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; 
+}
+#Product .video {
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    border-radius: 25px;
+    border: 10px solid rgba(167, 155, 0, 0.5);
+    transition: transform 300ms ease-in-out; /* Pour une animation fluide */
+}
+
+#Product .video:hover {
+    transform: scale(1.03);
+}
+
+#Product h2 {
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transform: translateY(20px); /* Position initiale (facultative) */
+}
+
+#Product:has(.video:hover) h2 {
+    opacity: 1;
+    transform: translateY(0); /* Déplace le titre vers sa position finale */
+}
+
+.bottom{
+    display: block;
+    position: fixed;
+    bottom : 0; 
+    background-color: rgba(153, 82, 0, 0.3);
+    width: 100vw;
+}
+
+.bottom h1{
+background-color: rgba(117, 62, 0, 0.3);
+margin: 0px;
+padding: 5px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 12pt;
+}
+
+.bottom p{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 11pt;
+}
+
+.bottom .reseau{
+    margin: 10px;
+    width: 50px;
+    height: auto;
+    vertical-align: top;
+}
+
+.page-achat{
+    background-color: rgba(117, 62, 0, 0.144);
+}
+
+.page-achat .image{
+    float: left;
+    width: 50%;
+    height: auto;
+    border-radius: 25px;
+    border: 10px solid rgba(167, 155, 0, 0.5);
+}
+
+.page-achat p h1 h2{
+    float:right;
+    vertical-align:baseline;
+}
+
+.page-achat h1{
+    background-color: rgba(117, 62, 0, 0.3);
+}
+
+.tableau{
+    background-color: rgba(117, 62, 0, 0.144);
+}
+
+.Accueil{
+    color: black;
+    background-color: rgba(117, 62, 0, 0.144);
+    position: fixed;
+    text-align:justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24pt;
+}
